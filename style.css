@@ -21,7 +21,7 @@
 /* SVG dans le header */
 .nuage {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -33,7 +33,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 100px;
+    height:80px;
 }
 
 .nuage .shape-fill {
@@ -45,7 +45,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #afafaf;
+  background-color: #ededed;
   display: flex;
   justify-content:space-around;
   align-items: center;
@@ -210,6 +210,50 @@ p {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
 }
+
+/* loisirs */
+
+.loisirs {
+  width: 50%;
+  margin: 0px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #000;
+}
+
+.loisirs h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #005a9c;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+}
+
+.loisirs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  gap: 20px;
+}
+
+.loisir {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.loisir h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.divider {
+  width: 1px;
+  background-color: #000;
+}
+
 
 /*------------------------------------------------------------------------*/
 /*                               FOOTER                                   */
