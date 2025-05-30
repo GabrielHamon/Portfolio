@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Gabriel Hamon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="left-section">
+          <div class="flag"><img src="./images/emoji/france_flag.png" alt="FRA"></div>
+          <div class="flag"><img src="./images/emoji/uk_flag.png" alt="ENG"></div>
+        </div>
+
+        <nav class="nav-links">
+          <a href="#qui">Qui suis-je ?</a>
+          <a href="#competences">Compétences</a>
+          <a href="#aime">Ce que j'aime</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+      <!-- HTML du SVG -->
+      <div class="nuage">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+              <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+              <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+          </svg>
+      </div>
+    </header>
+
+
+    <main>
+    <!-- PRESENTATION DE MOI -->
+    <div class="container" id="qui">
+        <h1><span class="emoji"><img src="./images/emoji/wave.png" alt="Hi"></span> Présentation de moi</h1>
+        <p><span class="emoji"><img src="./images/emoji/man.png" alt="Man"></span>Gabriel Hamon - 18 ans</p>
+        <p><span class="emoji"><img src="./images/emoji//pin.png" alt="Pin"></span>Étudiant en BUT Informatique – <strong><a href="https://iut-lannion.univ-rennes.fr">IUT de Lannion</a></strong></p>
+        <p><span class="emoji"><img src="./images/emoji/student_hat.png" alt="Chapo"></span>Actuellement en 1ère année</strong></p>
+
+        <h2>🎯 Situation actuelle</h2>
+        <p>
+          Je suis actuellement étudiant en BUT Informatique à l’IUT de Lannion. Mon parcours m’a permis d’acquérir 
+          des compétences solides en programmation (HTML, CSS, Java, C, SQL...), en gestion de bases de données, et 
+          en développement web. J’ai également eu l’occasion de travailler sur des <a href="#competences">projets concrets</a> 
+          en équipe, renforçant mes capacités en communication et en organisation.
+        </p>
+
+        <h2><span class="emoji"><img src="./images/emoji/target.png" alt="cible"></span> Objectifs</h2>
+        <p>
+          Pour l’instant, je me concentre sur :
+        </p>
+        <ul>
+          <li>Le renforcement de mes compétences en informatique</li>
+          <li>La participation à des projets personnels ou associatifs (je vous invite à suivre <a href="https://www.instagram.com/localdreamer.lan/">Local Dreamer</a>)</li>
+        </ul>
+        <p>
+          À moyen terme, je souhaite m’orienter vers un domaine qui me passionne vraiment, que ce soit dans la conception logicielle,
+          le développement front/back-end, ou tout autre domaine lié à l'informatique.
+        </p>
+    </div>
+
+       <!-- MES COMPETENCES -->
+    <section class="competences" id="competences">
+    <h2><span class="emoji2"><img src="./images/emoji/thinking_man.png" alt="Hmmm..."></span> Mes compétences</h2>
+        <div class="skills-grid">
+
+            <div class="skill" onclick=
+                "showPopup('Titre projet', 'présentation du projet')">
+            Nom de la compétence 1
+            </div>
+
+            <div class="skill" onclick=
+                "showPopup('Titre projet', 'présentation du projet')">
+            Nom de la compétence 2
+            </div>
+                        <div class="skill" onclick=
+                "showPopup('Titre projet', 'présentation du projet')">
+            Nom de la compétence 3
+            </div>
+                        <div class="skill" onclick=
+                "showPopup('Titre projet', 'présentation du projet')">
+            Nom de la compétence 4
+            </div>
+                        <div class="skill" onclick=
+                "showPopup('Titre projet', 'présentation du projet')">
+            Nom de la compétence 5
+            </div>
+                        <div class="skill" onclick=
+                "showPopup('Titre projet', 'présentation du projet')">
+            Nom de la compétence 6
+            </div>
+        </div>
+    </section>
+
+    <!-- Modale (popup) -->
+    <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h3 id="popup-title"></h3>
+        <p id="popup-description"></p>
+    </div>
+    </div>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
+
+
+<script>
+  function showPopup(title, description) {
+    document.getElementById('popup-title').textContent = title;
+    document.getElementById('popup-description').textContent = description;
+    document.getElementById('popup').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+
+  // Fermer le popup si on clique en dehors
+  window.onclick = function(event) {
+    const popup = document.getElementById('popup');
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  }
+</script>

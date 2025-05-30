@@ -1,0 +1,216 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-image:  url('./images/cascade.png');
+      background-size: cover;       /* pour remplir l’écran */
+     background-position: center;  /* centrer l’image */
+      background-repeat: no-repeat; /* ne pas répéter */
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .emoji {
+      font-size: 1.2em;
+      margin-right: 5px;
+  }
+
+/*------------------------------------------------------------------------*/
+/*                                   HEADER                               */
+/*------------------------------------------------------------------------*/
+
+/* SVG dans le header */
+.nuage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -5;
+}
+
+.nuage svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.nuage .shape-fill {
+    fill: #ededed;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #afafaf;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.flag {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+
+main a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #050027;
+}
+
+a:hover {
+  color: #002395;
+}
+
+main a:hover{
+  background-color:#ededed;
+  border-radius: 7px;
+  padding: 3px;
+}
+
+
+
+/*------------------------------------------------------------------------*/
+/*                                   MAIN                                 */
+/*------------------------------------------------------------------------*/
+
+/* Partie présentation */
+
+.container {
+    width: 50%;
+    margin: 100px auto 0px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #000000;
+}
+
+h1, h2 {
+    color: #005a9c;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Partie compétences */
+
+.competences {
+    width: 50%;
+    margin: 0px auto;
+    background-color: #646464;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.competences h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #000000;
+  display: inline-block;
+  color: #000000;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #000000;
+  font-weight: bold;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Popup modale */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-content h3 {
+  margin-top: 0;
+  color: #3a1212;
+}
+
+.popup-content p {
+  color: #444;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #999;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/*------------------------------------------------------------------------*/
+/*                               FOOTER                                   */
+/*------------------------------------------------------------------------*/
