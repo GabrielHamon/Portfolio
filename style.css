@@ -1,5 +1,5 @@
  body {
-      font-family: Arial, sans-serif;
+      font-family: "Poppins";
       background-image:  url('./images/purple_sky.jpg');
       background-size: cover;       /* pour remplir l’écran */
      background-position: center;  /* centrer l’image */
@@ -7,6 +7,10 @@
       color: #333;
       margin: 0;
       padding: 0;
+    }
+
+    h1, h2, h3 {
+      font-family: "DM Serif Display";
     }
 
     .emoji {
@@ -78,11 +82,11 @@ main a{
 }
 
 a:hover {
-  color: #002395;
+  color: #e6ddf4;
 }
 
 main a:hover{
-  background-color:#ededed;
+  background-color:#4b3a75;
   border-radius: 7px;
   padding: 3px;
 }
@@ -98,14 +102,14 @@ main a:hover{
 .container {
     width: 50%;
     margin: 100px auto 0px auto;
-    background-color: #fff;
+    background-color: #ded6eb;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 h1, h2 {
-    color: #005a9c;
+    color: #2d2d45;
 }
 
 h1 {
@@ -118,7 +122,7 @@ h2 {
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 /* Partie compétences */
@@ -257,3 +261,10 @@ p {
 /*------------------------------------------------------------------------*/
 /*                               FOOTER                                   */
 /*------------------------------------------------------------------------*/
+
+footer {
+  background-color: #4b3a75;
+  color: #ededed;
+  padding: 30px;
+  margin: 0;
+}
