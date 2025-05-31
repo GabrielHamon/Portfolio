@@ -1,6 +1,6 @@
  body {
       font-family: Arial, sans-serif;
-      background-image:  url('./images/cascade.png');
+      background-image:  url('./images/purple_sky.jpg');
       background-size: cover;       /* pour remplir l’écran */
      background-position: center;  /* centrer l’image */
       background-repeat: no-repeat; /* ne pas répéter */
@@ -37,7 +37,7 @@
 }
 
 .nuage .shape-fill {
-    fill: #ededed;
+    fill: #4b3a75;
 }
 
 
@@ -45,7 +45,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #ededed;
+  background-color: #4b3a75;
   display: flex;
   justify-content:space-around;
   align-items: center;
@@ -68,7 +68,7 @@ header {
 .nav-links a {
   margin-left: 30px;
   text-decoration: none;
-  color: #000000;
+  color: #ededed;
 }
 
 main a{
@@ -97,12 +97,11 @@ main a:hover{
 
 .container {
     width: 50%;
-    margin: 100px auto 0px;
+    margin: 100px auto 0px auto;
     background-color: #fff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #000000;
 }
 
 h1, h2 {
@@ -126,7 +125,7 @@ p {
 
 .competences {
     width: 50%;
-    margin: 0px auto;
+    margin: 50px auto;
     background-color: #646464;
     padding: 30px;
     border-radius: 12px;
