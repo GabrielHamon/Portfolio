@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio - Gabriel Hamon</title>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:
-  ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
-  1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" href="style.css">
+    <title>Portfolio - Gabriel Hamon</title>
 
-  <link rel="stylesheet" href="violet.css">
-</head>
-<body>
-  <header>
-    <div class="left-section">
-      <div class="flag"><a href="index.html"><img src="images/france_flag.png" alt="FRA"></a></div>
-      <div class="flag"><a href="index-en.html"><img src="images/uk_flag.png" alt="ENG"></a></div>
-    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:
+    ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
+    1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" href="style.css">
 
-    <nav class="nav-links">
-      <a href="#about">About Me</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Work Experience</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <link id="theme-style" rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <header>
+          <div class="left-section">
+
+            <div class="theme-switcher">
+              <label for="theme-select">Thème :</label>
+              <select id="theme-select">
+                <option value="violet.css">Violet</option>
+                <option value="vert.css">Green</option>
+                <option value="rouge.css">Red</option>
+              </select>
+            </div>
+
+            <div class="flag">
+              <a href="index.html"><img src="images/france_flag.png" alt="FRA"></a>
+            </div>
+
+            <div class="flag">
+              <a href="index-en.html"><img src="images/uk_flag.png" alt="ENG"></a>
+            </div>
+          </div>
+
+          <nav class="nav-links">
+            <a href="#qui">About me</a>
+            <a href="#etudes">My background</a>
+            <a href="#competences">My skills</a>
+            <a href="#experiences">My work experience</a>
+            <a href="#aime">My hobbies</a>
+            <a href="#contact">Contact</a>
+          </nav>
 
         <!-- HTML du SVG -->
         <div class="nuage">
@@ -36,207 +52,277 @@
                 <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
             </svg>
         </div>
-  </header>
+      </header>
 
-  <main>
-    <div class="container" id="about">
-      <div class="presentation-header">
-        <div>
-          <h1><span class="emoji"><img src="images/wave.png" alt="Hi"></span> About Me</h1>
-          <p><span class="emoji"><img src="images/man.png" alt="Man"></span>Gabriel Hamon - 18 years old</p>
-          <p><span class="emoji"><img src="images/pin.png" alt="Pin"></span>Computer Science student – <strong><a href="https://iut-lannion.univ-rennes.fr">IUT of Lannion</a></strong></p>
-          <p><span class="emoji"><img src="images/student_hat.png" alt="Chapo"></span>Currently in my 1st year</p>
-        </div>
-        <img src="images/img_officiel.jpg" alt="Profile photo" class="photo-profil">
-      </div>
 
-      <h2><span class="emoji"><img src="images/time.png" alt="clock"></span> Current Status</h2>
-      <p>
-        I'm currently a student in Computer Science at IUT Lannion. So far, I've developed strong skills in programming (HTML, CSS, Java, C, SQL...), database management, and web development. I've also worked on <a href="#skills">real projects</a> with teams, which helped me improve my communication and organizational abilities.
-      </p>
+      <main>
 
-      <h2><span class="emoji"><img src="images/target.png" alt="cible"></span> Goals</h2>
-      <p>Right now, I'm focusing on:</p>
-      <ul>
-        <li>Improving my technical skills in computer science</li>
-        <li>Participating in personal and community projects (check out <a href="https://www.instagram.com/localdreamer.lan/">Local Dreamer</a>)</li>
-      </ul>
-      <p>
-        In the near future, I'd like to move towards a field I'm passionate about — whether it's software design, front/back-end development, or something else in tech.
-      </p>
-    </div>
-
-    <section class="etudes" id="education">
-      <h2><span class="emoji2"><img src="images/student_hat.png" alt="Studies"></span> Education</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">2024 - Present</div>
-          <div class="timeline-content">
-            <h3>BUT Computer Science</h3>
-            <p>IUT of Lannion – University of Rennes. Learning programming, web development, database design...</p>
+      <!-- PRESENTATION -->
+      <div class="container" id="qui">
+          <div class="presentation-header">
+            <div>
+              <h1><span class="emoji"><img src="images/wave.png" alt="Hi"></span> Who am I ?</h1>
+              <p><span class="emoji"><img src="images/man.png" alt="Man"></span>Gabriel Hamon - 18 years old</p>
+              <p><span class="emoji"><img src="images//pin.png" alt="Pin"></span>Computer Science student - <strong><a href="https://iut-lannion.univ-rennes.fr">IUT de Lannion</a></strong></p>
+              <p><span class="emoji"><img src="images/student_hat.png" alt="Chapo"></span>Actually in 1st year</strong></p>
+            </div>
+            <img src="images/img_officiel.jpg" alt="Photo de profil" class="photo-profil">
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-date">2021 - 2024</div>
-          <div class="timeline-content">
-            <h3>French General Baccalaureate</h3>
-            <p>Jean-Brito High School – Majors in Physics-Chemistry and Mathematics (with Advanced Maths option)</p>
-          </div>
-        </div>
+          <h2><span class="emoji"><img src="images/time.png" alt="clock"></span> Current situation</h2>
+          <p>
+            I am currently a Computer Science Bachelor's student at IUT de Lannion. My studies have allowed me to develop 
+            solid skills in programming (HTML, CSS, Java, C, SQL...), database management, and web development. I also had 
+            the opportunity to work on <a href="#competences"> team projects</a>, which strengthened my communication and 
+            organizational skills.
+          </p>
 
-        <div class="timeline-item">
-          <div class="timeline-date">2020 - 2021</div>
-          <div class="timeline-content">
-            <h3>BIA – Aeronautics Initiation Certificate</h3>
-            <p>Saint-Joseph Middle School – Introduced to basics of aeronautics and meteorology.</p>
-          </div>
-        </div>
+          <h2><span class="emoji"><img src="images/target.png" alt="cible"></span> Goals</h2>
+          <p> For now, I focus on : </p>
+          <ul>
+            <li>Strengthening my skills</li>
+            <li>Participating in personal or community projects (I invite you to follow <a href="https://www.instagram.com/localdreamer.lan/">Local Dreamer</a>)</li>
+          </ul>
+          <p>
+            In the medium term, I wish to focus on a field I am truly passionate about, whether it be software design, 
+            front-end/back-end development, or any other IT-related domain.
+          </p>
       </div>
-    </section>
+      
+      <!-- ETUDES -->
+      <section class="etudes" id="etudes">
+        <h2><span class="emoji2"><img src="images/student_hat.png" alt="Études"></span> My background</h2>
+        <div class="timeline">
 
-    <section class="competences" id="skills">
-      <h2><span class="emoji2"><img src="images/thinking_man.png" alt="Hmm..."></span> My Skills</h2>
-      <div class="skills-grid">
-        <div class="skill" onclick="showPopup('SAE 1.01 - Implementing a client need', 'Project overview')">
-          Skill 1: Develop simple software applications
+          <div class="timeline-item">
+            <div class="timeline-date">2024 - Present</div>
+            <div class="timeline-content">
+              <h3>BUT Computer Science</h3>
+              <p>
+                IUT de Lannion - University of Rennes. Learning programming, web development, database management, ...
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2021 - 2024</div>
+            <div class="timeline-content">
+              <h3>General Baccalaureate</h3>
+              <p>Jean-Brito High School - Physics-Chemistry and Mathematics majors (Advanced Mathematics option)</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2021</div>
+            <div class="timeline-content">
+              <h3>Introduction to Aeronautics Certificate (BIA)</h3>
+              <p>
+                Saint-Joseph Middle School - As the name suggests, this diploma introduced me to the basics of aeronautics and meteorology.
+              </p>
+            </div>
+          </div>
+
         </div>
+      </section>
 
-        <div class="skill" onclick="showPopup('SAE 1.02 - Comparing algorithmic approaches', 'Project overview')">
-          Skill 2: Understand and build algorithms
+
+      <!-- MES COMPETENCES -->
+      <section class="competences" id="competences">
+        <h2><span class="emoji2"><img src="images/thinking_man.png" alt="Hmmm..."></span> My skills</h2>
+        <div class="skills-grid">
+
+          <div class="skill" onclick=
+            "showPopup('SAE 1.01 - Implementing a client need', 'As part of my training, I developed a version of the Snake game in C language, fully playable in the terminal. This project helped me strengthen my understanding of text-mode display management, handling dynamic arrays to represent the snake, as well as real-time game loops. I also implemented collision detection, a scoring system, and logic for the snake to grow each time it eats an apple. This simple but complete project taught me how to better structure my code and think in terms of optimization and game fluidity.')">
+            Skill 1: Developing simple computer applications
+          </div>
+
+          <div class="skill" onclick=
+            "showPopup('SAE 1.02 - Comparing algorithmic approaches', 'In this project, I automated the famous Snake game in C, with terminal display. After coding a manually playable version, I implemented algorithms to allow two snakes controlled by the program to compete. Each snake followed a simple algorithmic strategy based on seeking food and avoiding obstacles, including a directional priority logic. The main challenge was managing real-time collisions and optimizing decisions to simulate an autonomous duel. This project gave me practical experience with pathfinding algorithms and simulation concepts in a constrained environment.')">
+            Skill 2: Understanding and building algorithms
+          </div>
+
+          <div class="skill" onclick=
+            "showPopup('SAE 1.03 - Setting up a development workstation', 'In this project, I used Docker and Bash scripts to automate the processing of text and image files. The goal was to format text/image files, and eventually modify a medal table for the 2024 Olympics. The scripts extracted data, counted the number of medals per country by type (gold, silver, bronze), then formatted the final table in a readable way. This project allowed me to work with containerization tools and automate repetitive tasks efficiently.')">
+            Skill 3: Installing and configuring a workstation
+          </div>
+
+          <div class="skill" onclick=
+            "showPopup('SAE 1.04 - Designing a database', 'In this project, I designed a database around a football league. Starting from a simple text file describing the rules and entities of the championship, I created a structured UML schema, then translated it into classes in Tutorial D. This process helped me better understand conceptual data modeling and how to properly structure a relational database.')">
+            Skill 4: Designing and implementing a database
+          </div>
+
+          <div class="skill" onclick=
+            "showPopup('SAE 1.05 - Gathering client requirements', 'In this project, I participated in creating a website dedicated to the Paris 2024 Olympic Games. We started by analyzing the client’s needs to clearly understand the expected features. Then, we developed a graphic charter to define the site’s visual identity, and created a mockup to visualize the structure and design. Finally, we developed the site while respecting these elements, with the constraint of having only one CSS file.')">
+            Skill 5: Identifying client and user business requirements
+          </div>
+
+          <div class="skill" onclick=
+            "showPopup('SAE 1.06 - Exploring the economic and ecological environment','The aim of the project was to analyze the Corporate Social Responsibility (CSR) policy of a company, and we chose Nestlé as a case study. We first gathered as much information as possible from official reports, press releases, and public data concerning their social, environmental, and ethical commitments. Then, we evaluated how Nestlé practically applies its CSR policy by comparing the stated objectives with the actions actually implemented. This analysis highlighted areas where CSR policy monitoring could be improved.')">
+            Skill 6: Identifying personal aptitudes for teamwork
+          </div>
+
         </div>
+      </section>
 
-        <div class="skill" onclick="showPopup('SAE 1.03 - Installing a development workstation', 'Project overview')">
-          Skill 3: Set up and configure a work environment
-        </div>
 
-        <div class="skill" onclick="showPopup('SAE 1.04 - Designing a database', 'Project overview')">
-          Skill 4: Design and implement a database
-        </div>
-
-        <div class="skill" onclick="showPopup('SAE 1.05 - Identifying client needs', 'Project overview')">
-          Skill 5: Identify business and user requirements
-        </div>
-
-        <div class="skill" onclick="showPopup('SAE 1.06 - Understanding team collaboration and environment', 'Project overview')">
-          Skill 6: Identify your strengths for working in a team
-        </div>
-      </div>
-    </section>
-
-    <div id="popup" class="popup">
+      <!-- fenêtres modales (popup) -->
+      <div id="popup" class="popup">
       <div class="popup-content">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <h3 id="popup-title"></h3>
-        <p id="popup-description"></p>
+          <span class="close" onclick="closePopup()">&times;</span>
+          <h3 id="popup-title"></h3>
+          <p id="popup-description"></p>
       </div>
-    </div>
-
-    <section id="experience" class="section-experiences">
-      <h2><span class="emoji"><img src="images/valise.png" alt="Briefcase"></span> Work Experience</h2>
-      <div class="experience">
-        <h3>Farm Worker - Family Farm</h3>
-        <p><strong>2018 - Present</strong></p>
-        <p>
-          I've been working on my family's farm for about 7-8 years now, which has taught me perseverance and creative problem solving.
-        </p>
       </div>
-    </section>
 
-    <section class="loisirs" id="hobbies">
-      <h2><span class="emoji2"><img src="images/coeur.png" alt="Heart"></span> Hobbies</h2>
-      <div class="loisirs-container">
-        <div class="loisir">
-          <h3>Video Games</h3>
+      <!-- MES EXPERIENCES -->
+      <section id="experiences" class="section-experiences">
+        <h2><span class="emoji"><img src="images/valise.png" alt="Valise"></span> My professional experiences</h2>
+        <div class="experience">
+          <h3>farm worker - Family farm</h3>
+          <p><strong>2018 - Present</strong></p>
           <p>
-            Gaming is by far my favorite hobby. From Pokémon to Minecraft, and through Yo-Kai Watch or Elden Ring, 
-            I've dived into fantastic worlds over and over — and I'm still amazed every time.
+            farm worker on the family farm for about 7 to 8 years now, which has allowed me 
+            to develop certain skills such as perseverance and problem-solving.
           </p>
         </div>
+      </section>
 
-        <div class="divider"></div>
 
-        <div class="loisir">
-          <h3>Reading</h3>
-          <p>
-            Reading lets me escape and explore new universes. Since I was a kid, I've always loved books — whether 
-            it's sci-fi, crime novels, comics, or manga.
-          </p>
+      <!-- MES LOISIRS -->
+      <section class="loisirs" id="aime">
+        <h2><span class="emoji2"><img src="images/coeur.png" alt="gaming"></span> My hobbies</h2>
+        <div class="loisirs-container">
+          <div class="loisir">
+            <h3> Video games</h3>
+            <p>
+              Video games are by far my favorite hobby: From Pokémon to Minecraft, including Yo-Kai Watch or Elden Ring, 
+              I have repeatedly immersed myself in fantastic worlds, and I am still amazed by them every day.
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="loisir">
+            <h3>Reading</h3>
+            <p>
+              Reading is for me a way to escape and explore new worlds. Since I was a child, I have loved reading, 
+              whether it be science fiction novels, detective novels, comics, manga, ...
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="loisir">
+            <h3>Football</h3>
+            <p>Football is my favorite sport. It’s a very simple game (22 players running after 
+              the same ball to get it into a rectangle 7.32 meters wide and 2.44 meters high), 
+              but it has always thrilled me.
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div class="divider"></div>
 
-        <div class="loisir">
-          <h3>Football</h3>
-          <p>
-            Football is my favorite sport. It may look simple (22 players chasing the same ball and trying to put it 
-            in a 7.32 x 2.44 m goal), but it's always made me feel something special.
-          </p>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><strong>Adress :</strong> Rue Edouard Branly, 22300 Lannion</p>
+          <p><strong>Phone number :</strong> <a href="tel:+330612514265">06 12 51 42 65</a></p>
+          <p><strong>Mail :</strong> <a href="hamongabriel35@gmail.com">hamongabriel35@gmail.com</a></p>
+        </div>
+        <div class="footer-right">
+          <a href="https://www.instagram.com/gabriel_35470/" target="_blank" class="social-icon">
+            <img src="images/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://github.com/GabrielHamon" target="_blank" class="social-icon">
+            <img src="images/github.png" alt="Github" />
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-hamon-248264357/" target="_blank" class="social-icon">
+            <img src="images/logo-linkedin.png" alt="Linkedin" />
+          </a>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer" id="contact">
-    <div class="footer-content">
-      <div class="footer-left">
-        <p><strong>Address:</strong> Rue Edouard Branly, 22300 Lannion</p>
-        <p><strong>Phone:</strong> <a href="tel:+330612514265">+33 6 12 51 42 65</a></p>
-        <p><strong>Email:</strong> <a href="mailto:hamongabriel35@gmail.com">hamongabriel35@gmail.com</a></p>
-      </div>
-      <div class="footer-right">
-        <a href="https://www.instagram.com/gabriel_35470/" target="_blank" class="social-icon">
-          <img src="images/instagram.png" alt="Instagram" />
-        </a>
-        <a href="https://github.com/GabrielHamon" target="_blank" class="social-icon">
-          <img src="images/github.png" alt="Github" />
-        </a>
-        <a href="https://www.linkedin.com/in/gabriel-hamon-248264357/" target="_blank" class="social-icon">
-          <img src="images/logo-linkedin.png" alt="Linkedin" />
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- You can keep the same JS for the stars and popups -->
-  <script>
-    function showPopup(title, description) {
-      document.getElementById('popup-title').textContent = title;
-      document.getElementById('popup-description').textContent = description;
-      document.getElementById('popup').style.display = 'block';
-    }
-
-    function closePopup() {
-      document.getElementById('popup').style.display = 'none';
-    }
-
-    window.onclick = function(event) {
-      const popup = document.getElementById('popup');
-      if (event.target === popup) {
-        popup.style.display = "none";
-      }
-    }
-  </script>
-
-  <script>
-    const nb = 500;
-    const colors = ['#ffffff', '#ffcc99', '#99ccff', '#ff99cc', '#ccffcc'];
-    const starContainer = document.createElement('div');
-    starContainer.className = 'stars';
-    document.body.appendChild(starContainer);
-
-    for (let i = 0; i < nb; i++) {
-      const star = document.createElement('div');
-      star.className = 'star';
-      star.style.top = `${Math.random() * 100}%`;
-      star.style.left = `${Math.random() * 100}%`;
-      const size = Math.random() * 3 + 1;
-      star.style.width = `${size}px`;
-      star.style.height = `${size}px`;
-      star.style.background = colors[Math.floor(Math.random() * colors.length)];
-      star.style.animationDelay = `${Math.random() * 2}s`;
-      starContainer.appendChild(star);
-    }
-  </script>
-</body>
+    </footer>
+    
+  </body>
 </html>
+
+
+<!-- SCRIPT POUR LES POPUP -->
+<script>
+  function showPopup(title, description) {
+    document.getElementById('popup-title').textContent = title;
+    document.getElementById('popup-description').textContent = description;
+    document.getElementById('popup').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+
+  // Fermer le popup si on clique en dehors
+  window.onclick = function(event) {
+    const popup = document.getElementById('popup');
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  }
+</script>
+
+
+
+<!-- SCRIPT POUR LES ETOILES -->
+<script>
+  const nb = 500;
+  const colors = ['#ffffff', '#ffcc99', '#99ccff', '#ff99cc', '#ccffcc'];
+
+  const starContainer = document.createElement('div');
+  starContainer.className = 'stars';
+  document.body.appendChild(starContainer);
+
+  for (let i = 0; i < nb; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    
+    // Position aléatoire
+    star.style.top = `${Math.random() * 100}%`;
+    star.style.left = `${Math.random() * 100}%`;
+
+    // Taille aléatoire
+    const size = Math.random() * 3 + 1;
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+
+    // Couleur aléatoire
+    star.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+    // Délai d'animation pour l'effet scintillant
+    star.style.animationDelay = `${Math.random() * 2}s`;
+
+    starContainer.appendChild(star);
+  }
+</script>
+
+
+
+<!-- SCRIPT POUR LE CHOIX DE THEME -->
+<script>
+  const themeSelect = document.getElementById("theme-select");
+  const themeLink = document.getElementById("theme-style");
+
+  // Charger le thème sauvegardé
+  const savedTheme = localStorage.getItem("theme-css");
+  if (savedTheme) {
+    themeLink.href = savedTheme;
+    themeSelect.value = savedTheme;
+  }
+
+  // Au changement
+  themeSelect.addEventListener("change", () => {
+    const selectedTheme = themeSelect.value;
+    themeLink.href = selectedTheme;
+    localStorage.setItem("theme-css", selectedTheme);
+  });
+</script>
