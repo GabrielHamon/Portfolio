@@ -119,29 +119,29 @@
         <div class="skills-grid">
 
             <div class="skill" onclick=
-                "showPopup('Titre projet', 'présentation du projet')">
-            Nom de la compétence 1
+                "showPopup('Implémentation d un besoin client', 'présentation du projet')">
+            Compétence 1 : Développer des applications informatiques simples
             </div>
 
             <div class="skill" onclick=
-                "showPopup('Titre projet', 'présentation du projet')">
-            Nom de la compétence 2
+                "showPopup('Comparaison d approches algorithmiques', 'présentation du projet')">
+            Compétence 2 : Appréhender et construire des algorithmes
             </div>
                         <div class="skill" onclick=
-                "showPopup('Titre projet', 'présentation du projet')">
-            Nom de la compétence 3
+                "showPopup('Installation d un poste pour le développement', 'présentation du projet')">
+            Compétence 3 : Installer et configurer un poste de travail
             </div>
                         <div class="skill" onclick=
-                "showPopup('Titre projet', 'présentation du projet')">
-            Nom de la compétence 4
+                "showPopup('Conception d une base de données', 'présentation du projet')">
+            Compétence 4 : Concevoir et mettre en place une BDD
             </div>
                         <div class="skill" onclick=
-                "showPopup('Titre projet', 'présentation du projet')">
-            Nom de la compétence 5
+                "showPopup('Recueil des besoins d un client', 'présentation du projet')">
+            Compétence 5 : Identifier les besoins métiers des clients et des utilisateurs
             </div>
                         <div class="skill" onclick=
-                "showPopup('Titre projet', 'présentation du projet')">
-            Nom de la compétence 6
+                "showPopup('Découverte de l environnement économique et écologique','présentation du projet')">
+            Compétence 6 : Identifier ses aptitudes pour travailler dans une équipe
             </div>
         </div>
     </section>
@@ -215,11 +215,17 @@
     </div>
   </footer>
 
+<div class="shooting-stars">
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+</div>
+
 
 </body>
 </html>
 
-
+<!-- SCRIPT POUR LES POPUP -->
 <script>
   function showPopup(title, description) {
     document.getElementById('popup-title').textContent = title;
@@ -237,5 +243,35 @@
     if (event.target === popup) {
       popup.style.display = "none";
     }
+  }
+</script>
+
+<!-- SCRIPT POUR LES ETOILES -->
+<script>
+  const starContainer = document.createElement('div');
+  starContainer.className = 'stars';
+  document.body.appendChild(starContainer);
+
+  for (let i = 0; i < 350; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    
+    // Position aléatoire
+    star.style.top = `${Math.random() * 100}%`;
+    star.style.left = `${Math.random() * 100}%`;
+
+    // Taille aléatoire
+    const size = Math.random() * 2 + 1;
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+
+    // Couleur aléatoire
+    const colors = ['#ffffff', '#ffcc99', '#99ccff', '#ff99cc', '#ccffcc'];
+    star.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+    // Délai d’animation pour l’effet scintillant
+    star.style.animationDelay = `${Math.random() * 2}s`;
+
+    starContainer.appendChild(star);
   }
 </script>
