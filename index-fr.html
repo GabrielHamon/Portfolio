@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio - Gabriel Hamon</title>
+  <head>
+    <meta charset="UTF-8">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:
-  ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
-  1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" href="style.css">
+    <title>Portfolio - Gabriel Hamon</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="left-section">
-          <div class="flag"><a href="index-fr.html">
-            <img src="images/france_flag.png" alt="FRA">
-          </a></div>
-          <div class="flag"><a href="index-en.html">
-            <img src="images/uk_flag.png" alt="ENG">
-          </a></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:
+    ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
+    1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <header>
+          <div class="left-section">
+            <div class="flag">
+              <a href="index-fr.html"><img src="images/france_flag.png" alt="FRA"></a>
+            </div>
+            <div class="flag">
+              <a href="index-en.html"><img src="images/uk_flag.png" alt="ENG"></a>
+            </div>
+          </div>
+
+          <nav class="nav-links">
+            <a href="#qui">Qui suis-je ?</a>
+            <a href="#etudes">Mon parcours</a>
+            <a href="#competences">Mes compétences</a>
+            <a href="#experiences">Mes éxperiences pro</a>
+            <a href="#aime">Mes loisirs</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+        <!-- HTML du SVG -->
+        <div class="nuage">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
         </div>
-
-        <nav class="nav-links">
-          <a href="#qui">Qui suis-je ?</a>
-          <a href="#etudes">Mon parcours</a>
-          <a href="#competences">Mes compétences</a>
-          <a href="#experiences">Mes éxperiences pro</a>
-          <a href="#aime">Mes loisirs</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-      <!-- HTML du SVG -->
-      <div class="nuage">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-              <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-              <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-          </svg>
-      </div>
-    </header>
+      </header>
 
 
-    <main>
-    <!-- PRESENTATION DE MOI -->
-    <div class="container" id="qui">
+      <main>
+
+      <!-- PRESENTATION -->
+      <div class="container" id="qui">
           <div class="presentation-header">
             <div>
               <h1><span class="emoji"><img src="images/wave.png" alt="Hi"></span> Qui suis-je ?</h1>
@@ -56,184 +58,183 @@
             <img src="images/img_officiel.jpg" alt="Photo de profil" class="photo-profil">
           </div>
 
-        <h2><span class="emoji"><img src="images/time.png" alt="clock"></span> Situation actuelle</h2>
-        <p>
-          Je suis actuellement étudiant en BUT Informatique à l’IUT de Lannion. Mon parcours m’a permis d’acquérir 
-          des compétences solides en programmation (HTML, CSS, Java, C, SQL...), en gestion de bases de données, et 
-          en développement web. J’ai également eu l’occasion de travailler sur des <a href="#competences">projets concrets</a> 
-          en équipe, renforçant mes capacités en communication et en organisation.
-        </p>
+          <h2><span class="emoji"><img src="images/time.png" alt="clock"></span> Situation actuelle</h2>
+          <p>
+            Je suis actuellement étudiant en BUT Informatique à l’IUT de Lannion. Mon parcours m’a permis d’acquérir 
+            des compétences solides en programmation (HTML, CSS, Java, C, SQL...), en gestion de bases de données, et 
+            en développement web. J’ai également eu l’occasion de travailler sur des <a href="#competences">projets concrets</a> 
+            en équipe, renforçant mes capacités en communication et en organisation.
+          </p>
 
-        <h2><span class="emoji"><img src="images/target.png" alt="cible"></span> Objectifs</h2>
-        <p> Pour l’instant, je me concentre sur : </p>
-        <ul>
-          <li>Le renforcement de mes compétences en informatique</li>
-          <li>La participation à des projets personnels ou associatifs (je vous invite à suivre <a href="https://www.instagram.com/localdreamer.lan/">Local Dreamer</a>)</li>
-        </ul>
-        <p>
-          À moyen terme, je souhaite m’orienter vers un domaine qui me passionne vraiment, que ce soit dans la conception logicielle,
-          le développement front/back-end, ou tout autre domaine lié à l'informatique.
-        </p>
-    </div>
+          <h2><span class="emoji"><img src="images/target.png" alt="cible"></span> Objectifs</h2>
+          <p> Pour l’instant, je me concentre sur : </p>
+          <ul>
+            <li>Le renforcement de mes compétences en informatique</li>
+            <li>La participation à des projets personnels ou associatifs (je vous invite à suivre <a href="https://www.instagram.com/localdreamer.lan/">Local Dreamer</a>)</li>
+          </ul>
+          <p>
+            À moyen terme, je souhaite m’orienter vers un domaine qui me passionne vraiment, que ce soit dans la conception logicielle,
+            le développement front/back-end, ou tout autre domaine lié à l'informatique.
+          </p>
+      </div>
+      
+      <!-- ETUDES -->
+      <section class="etudes" id="etudes">
+        <h2><span class="emoji2"><img src="images/student_hat.png" alt="Études"></span> Mon parcours</h2>
+          <div class="timeline">
 
-        <section class="etudes" id="etudes">
-      <h2><span class="emoji2"><img src="images/student_hat.png" alt="Études"></span> Mon parcours</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">2024 - Aujourd’hui</div>
-            <div class="timeline-content">
-              <h3>BUT Informatique</h3>
-              <p>
-                IUT de Lannion - Université de Rennes. Apprentissage de la programmation, du développement web, 
-                de la gestion de base de données, ...
-              </p>
+            <div class="timeline-item">
+              <div class="timeline-date">2024 - Aujourd’hui</div>
+              <div class="timeline-content">
+                <h3>BUT Informatique</h3>
+                <p>
+                  IUT de Lannion - Université de Rennes. Apprentissage de la programmation, du développement web, 
+                  de la gestion de base de données, ...
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="timeline-item">
-            <div class="timeline-date">2021 - 2024</div>
-            <div class="timeline-content">
-              <h3>Baccalauréat géneral</h3>
-              <p>Lycée Jean-Brito - spécialités Physique-Chimie et Mathématiques (option Mathématiques expertes)</p>
+            <div class="timeline-item">
+              <div class="timeline-date">2021 - 2024</div>
+              <div class="timeline-content">
+                <h3>Baccalauréat géneral</h3>
+                <p>Lycée Jean-Brito - spécialités Physique-Chimie et Mathématiques (option Mathématiques expertes)</p>
+              </div>
             </div>
-          </div>
 
-          <div class="timeline-item">
-            <div class="timeline-date">2020 - 2021</div>
-            <div class="timeline-content">
-              <h3>Brevet d'initiation à l'aéronautique (BIA)</h3>
-              <p>
-                Collège Saint-Joseph - Comme son nom l'indique, ce diplôme m'a initié aux bases de l'aéronautique 
-                et de la météorologie.</p>
+            <div class="timeline-item">
+              <div class="timeline-date">2020 - 2021</div>
+              <div class="timeline-content">
+                <h3>Brevet d'initiation à l'aéronautique (BIA)</h3>
+                <p>
+                  Collège Saint-Joseph - Comme son nom l'indique, ce diplôme m'a initié aux bases de l'aéronautique 
+                  et de la météorologie.</p>
+              </div>
             </div>
-          </div>
 
+          </div>
+        </section>
+
+        <!-- MES COMPETENCES -->
+        <section class="competences" id="competences">
+          <h2><span class="emoji2"><img src="images/thinking_man.png" alt="Hmmm..."></span> Mes compétences</h2>
+          <div class="skills-grid">
+
+            <div class="skill" onclick=
+              "showPopup('Implémentation d un besoin client', 'présentation du projet')">
+              Compétence 1 : Développer des applications informatiques simples
+            </div>
+
+            <div class="skill" onclick=
+              "showPopup('Comparaison d approches algorithmiques', 'présentation du projet')">
+              Compétence 2 : Appréhender et construire des algorithmes
+            </div>
+
+            <div class="skill" onclick=
+              "showPopup('Installation d un poste pour le développement', 'présentation du projet')">
+              Compétence 3 : Installer et configurer un poste de travail
+            </div>
+
+            <div class="skill" onclick=
+              "showPopup('Conception d une base de données', 'présentation du projet')">
+              Compétence 4 : Concevoir et mettre en place une BDD
+            </div>
+
+            <div class="skill" onclick=
+              "showPopup('Recueil des besoins d un client', 'présentation du projet')">
+              Compétence 5 : Identifier les besoins métiers des clients et des utilisateurs
+            </div>
+
+            <div class="skill" onclick=
+              "showPopup('Découverte de l environnement économique et écologique','présentation du projet')">
+              Compétence 6 : Identifier ses aptitudes pour travailler dans une équipe
+            </div>
+
+          </div>
+        </section>
+
+      <!-- fenêtres modales (popup) -->
+      <div id="popup" class="popup">
+      <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <h3 id="popup-title"></h3>
+          <p id="popup-description"></p>
+      </div>
+      </div>
+
+      <!-- MES EXPERIENCES -->
+      <section id="experiences" class="section-experiences">
+        <h2><span class="emoji"><img src="images/valise.png" alt="Valise"></span> Mes expériences professionnelles</h2>
+        <div class="experience">
+          <h3>Ouvrier agricole - Exploitation familiale</h3>
+          <p><strong> 2018 - Aujourd’hui</strong></p>
+          <p>
+            Ouvrier agricole sur l'exploitation familiale depuis maintenant 7/8 ans, cela m'a permis 
+            de développer certaines compétences tel que la perséverance ou la résolution de problèmes.
+          </p>
         </div>
       </section>
 
-       <!-- MES COMPETENCES -->
-    <section class="competences" id="competences">
-    <h2><span class="emoji2"><img src="images/thinking_man.png" alt="Hmmm..."></span> Mes compétences</h2>
-        <div class="skills-grid">
+      <!-- MES LOISIRS -->
+      <section class="loisirs" id="aime">
+        <h2><span class="emoji2"><img src="images/coeur.png" alt="gaming"></span> Mes loisirs</h2>
+        <div class="loisirs-container">
+          <div class="loisir">
+            <h3> Jeux vidéo</h3>
+            <p>
+              Les jeux vidéos, c'est de loin mon loisir favori : De Pokémon à Minecraft en passant par des jeux Yo-Kai 
+              Watch ou Elden Ring, je me suis plongé à mainte reprises dans des univers fantastiques, et je m'y 
+              emerveille encore chaque jour.
+            </p>
+          </div>
 
-            <div class="skill" onclick=
-                "showPopup('Implémentation d un besoin client', 'présentation du projet')">
-            Compétence 1 : Développer des applications informatiques simples
-            </div>
+          <div class="divider"></div>
 
-            <div class="skill" onclick=
-                "showPopup('Comparaison d approches algorithmiques', 'présentation du projet')">
-            Compétence 2 : Appréhender et construire des algorithmes
-            </div>
-                        <div class="skill" onclick=
-                "showPopup('Installation d un poste pour le développement', 'présentation du projet')">
-            Compétence 3 : Installer et configurer un poste de travail
-            </div>
-                        <div class="skill" onclick=
-                "showPopup('Conception d une base de données', 'présentation du projet')">
-            Compétence 4 : Concevoir et mettre en place une BDD
-            </div>
-                        <div class="skill" onclick=
-                "showPopup('Recueil des besoins d un client', 'présentation du projet')">
-            Compétence 5 : Identifier les besoins métiers des clients et des utilisateurs
-            </div>
-                        <div class="skill" onclick=
-                "showPopup('Découverte de l environnement économique et écologique','présentation du projet')">
-            Compétence 6 : Identifier ses aptitudes pour travailler dans une équipe
-            </div>
+          <div class="loisir">
+            <h3>Lecture</h3>
+            <p>
+              La lecture est pour moi un moyen de m'évader, d'explorer de nouveaux univers. Depuis tout petit, j'adore lire, 
+              que ce soit des romans de science-fiction, des romans policiers, des BD, des mangas, ... 
+            </p>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="loisir">
+            <h3>Football</h3>
+            <p>Le football, c'est mon sport de coeur. C'est un sport très simple (22 joueurs qui courent après 
+              la même balle pour la mettre dans un rectangle de 7,32 mètres de large sur 2,44 mètres de haut)
+              mais qui m'a toujours fait vibrer.
+
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Modale (popup) -->
-    <div id="popup" class="popup">
-    <div class="popup-content">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <h3 id="popup-title"></h3>
-        <p id="popup-description"></p>
-    </div>
-    </div>
+    </main>
 
-    <!-- MES EXPERIENCES -->
-    <section id="experiences" class="section-experiences">
-    <h2><span class="emoji"><img src="images/valise.png" alt="Valise"></span> Mes expériences professionnelles</h2>
-    <div class="experience">
-      <h3>Ouvrier agricole - Exploitation familiale</h3>
-      <p><strong> 2018 - Aujourd’hui</strong></p>
-      <p>
-        Ouvrier agricole sur l'exploitation familiale depuis maintenant 7/8 ans, cela m'a permis 
-        de développer certaines compétences tel que la perséverance ou la résolution de problèmes.
-      </p>
-    </div>
-  </section>
-
-    <!-- MES LOISIRS -->
-    <section class="loisirs" id="aime">
-      <h2><span class="emoji2"><img src="images/coeur.png" alt="gaming"></span> Mes loisirs</h2>
-
-      <div class="loisirs-container">
-        <div class="loisir">
-          <h3> Jeux vidéo</h3>
-          <p>
-            Les jeux vidéos, c'est de loin mon loisir favori : De Pokémon à Minecraft en passant par des jeux Yo-Kai 
-            Watch ou Elden Ring, je me suis plongé à mainte reprises dans des univers fantastiques, et je m'y 
-            emerveille encore chaque jour.
-          </p>
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><strong>Adresse :</strong> Rue Edouard Branly, 22300 Lannion</p>
+          <p><strong>Téléphone :</strong> <a href="tel:+330612514265">06 12 51 42 65</a></p>
+          <p><strong>Email :</strong> <a href="hamongabriel35@gmail.com">hamongabriel35@gmail.com</a></p>
         </div>
-
-        <div class="divider"></div>
-
-        <div class="loisir">
-          <h3>Lecture</h3>
-          <p>
-            La lecture est pour moi un moyen de m'évader, d'explorer de nouveaux univers. Depuis tout petit, j'adore lire, 
-            que ce soit des romans de science-fiction, des romans policiers, des BD, des mangas, ... 
-          </p>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="loisir">
-          <h3>Football</h3>
-          <p>Le football, c'est mon sport de coeur. C'est un sport très simple (22 joueurs qui courent après 
-             la même balle pour la mettre dans un rectangle de 7,32 mètres de large sur 2,44 mètres de haut)
-             mais qui m'a toujours fait vibrer.
-
-          </p>
+        <div class="footer-right">
+          <a href="https://www.instagram.com/gabriel_35470/" target="_blank" class="social-icon">
+            <img src="images/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://github.com/GabrielHamon" target="_blank" class="social-icon">
+            <img src="images/github.png" alt="Github" />
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-hamon-248264357/" target="_blank" class="social-icon">
+            <img src="images/logo-linkedin.png" alt="Linkedin" />
+          </a>
         </div>
       </div>
-    </section>
-
-  </main>
-
-<footer class="footer" id="contact">
-    <div class="footer-content">
-      <div class="footer-left">
-        <p><strong>Adresse :</strong> Rue Edouard Branly, 22300 Lannion</p>
-        <p><strong>Téléphone :</strong> <a href="tel:+330612514265">06 12 51 42 65</a></p>
-        <p><strong>Email :</strong> <a href="hamongabriel35@gmail.com">hamongabriel35@gmail.com</a></p>
-      </div>
-      <div class="footer-right">
-        <a href="https://www.instagram.com/gabriel_35470/" target="_blank" class="social-icon">
-          <img src="images/instagram.png" alt="Instagram" />
-        </a>
-        <a href="https://github.com/GabrielHamon" target="_blank" class="social-icon">
-          <img src="images/github.png" alt="Github" />
-        </a>
-        <a href="https://www.linkedin.com/in/gabriel-hamon-248264357/" target="_blank" class="social-icon">
-          <img src="images/logo-linkedin.png" alt="Linkedin" />
-        </a>
-      </div>
-    </div>
-  </footer>
-
-<div class="shooting-stars">
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-</div>
-
-
-</body>
+    </footer>
+    
+  </body>
 </html>
 
 <!-- SCRIPT POUR LES POPUP -->
