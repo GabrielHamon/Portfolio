@@ -1,18 +1,35 @@
- body {
-      font-family: "Poppins";
-      background-color: rgb(35, 1, 1);
-      margin: 0;
-      padding: 0;
-    }
+body {
+    font-family: "Poppins";
+    background-color: rgb(0, 13, 3);
+    margin: 0;
+    padding: 0;
+}
 
-    h1, h2, h3 {
-      font-family: "DM Serif Display";
-    }
+h1, h2, h3 {
+    font-family: "DM Serif Display";
+}
 
-    .emoji {
-      font-size: 1.2em;
-      margin-right: 5px;
-  }
+.emoji {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+h1, h2 {
+    color: #34452d;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+p {
+    line-height: 1.4;
+}
 
 /*------------------------------------------------------------------------*/
 /*                                   HEADER                               */
@@ -22,7 +39,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #690202;
+  background-color: #034120;
   display: flex;
   justify-content:space-around;
   align-items: center;
@@ -57,7 +74,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #690202; /* couleur du header */
+  background-color: #034120; /* couleur du header */
   border-radius: 8px;
   font-family: "Poppins";
   color: #ededed;
@@ -69,9 +86,9 @@ header {
 }
 
 #theme-select {
-  background-color: #6a2c2c;
+  background-color: #2d4532;
   color: #ededed;
-  border: 2px solid #fda7a7;
+  border: 2px solid #70b78c;
   padding: 3px 5px;
   margin-right: 10px;
   border-radius: 6px;
@@ -81,7 +98,7 @@ header {
 }
 
 #theme-select:hover {
-  background-color: #6a2c2c;
+  background-color: #2d4532;
   border-color: #ffffff;
 }
 
@@ -104,7 +121,7 @@ header {
 }
 
 .nuage .shape-fill {
-    fill: #690202;
+    fill: #034120;
 }
 
 /*------------------------------------------------------------------------*/
@@ -114,15 +131,15 @@ header {
 main a{
   text-decoration: none;
   font-weight: 600;
-  color: #270000;
+  color: #050027;
 }
 
 a:hover {
-  color: #ebd6d6;
+  color: #e6ddf4;
 }
 
 main a:hover{
-  background-color:#690202;
+  background-color:#034120;
   border-radius: 7px;
   padding: 3px;
 }
@@ -132,7 +149,7 @@ main a:hover{
 .container {
     width: 50%;
     margin: 100px auto 0px auto;
-    background-color: #ebd6d6;
+    background-color: #daebdc;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -151,31 +168,14 @@ main a:hover{
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #690202;
-}
-
-h1, h2 {
-    color: #452d2d;
-}
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-h2 {
-    margin-top: 30px;
-}
-
-p {
-    line-height: 1.4;
+  border: 3px solid #034120;
 }
 
 /* Études - Frise chronologique */
 .etudes {
   width: 50%;
   margin: 50px auto;
-  background-color: #ebd6d6;
+  background-color: #daebdc;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -184,7 +184,7 @@ p {
 .etudes h2 {
   font-size: 48px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #690202;
+  border-bottom: 1px solid #034120;
 
 }
 
@@ -194,7 +194,7 @@ p {
   gap: 30px;
   position: relative;
   margin-left: 20px;
-  border-left: 3px solid #690202;
+  border-left: 3px solid #034120;
   padding-left: 20px;
 }
 
@@ -204,12 +204,12 @@ p {
 
 .timeline-date {
   font-weight: bold;
-  color: #690202;
+  color: #034120;
   margin-bottom: 5px;
 }
 
 .timeline-content {
-  background-color: #fda7a7;
+  background-color: #70b78c;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -223,7 +223,7 @@ p {
   top: 10px;
   width: 15px;
   height: 15px;
-  background-color: #690202;
+  background-color: #034120;
   border: 3px solid white;
   border-radius: 50%;
 }
@@ -233,7 +233,7 @@ p {
 .competences {
     width: 50%;
     margin: 50px auto;
-    background-color: #ebd6d6;
+    background-color: #daebdc;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -242,7 +242,7 @@ p {
 .competences h2 {
   font-size: 48px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #690202;
+  border-bottom: 1px solid #034120;
 }
 
 .skills-grid {
@@ -254,7 +254,7 @@ p {
 }
 
 .skill {
-  background-color: #690202;
+  background-color: #034120;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -282,7 +282,7 @@ p {
 }
 
 .popup-content {
-  background-color: #ebd6d6;
+  background-color: #daebdc;
   margin: 100px auto;
   padding: 30px;
   border-radius: 12px;
@@ -294,7 +294,7 @@ p {
 
 .popup-content h3 {
   margin-top: 0;
-  color: #3a1212;
+  color: #153a12;
 }
 
 .popup-content p {
@@ -320,8 +320,8 @@ p {
 
 .section-experiences {
   padding: 30px;
-  background-color: #ebd6d6;
-  color: #690202;
+  background-color: #daebdc;
+  color: #034120;
   width: 50%;
   margin: 50px auto;
   border-radius: 15px;
@@ -332,22 +332,22 @@ p {
 .section-experiences h2 {
   font-size: 48px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #690202;
+  border-bottom: 1px solid #034120;
 }
 
 .experience {
   margin: 0 10px 30px;
   padding: 15px;
-  background-color: #690202;
-  color: #ebd6d6;
-  border-left: 7px solid #fda7a7;
+  background-color: #034120;
+  color: #daebdc;
+  border-left: 7px solid #70b78c;
   border-radius: 10px;
 }
 
 .experience h3 {
   margin: 0;
   font-size: 1.3em;
-  color: #fda7a7;
+  color: #70b78c;
 }
 
 .experience p {
@@ -360,7 +360,7 @@ p {
 .loisirs {
   width: 50%;
   margin: 50px auto;
-  background-color: #ebd6d6;
+  background-color: #daebdc;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -370,7 +370,7 @@ p {
 .loisirs h2 {
   font-size: 48px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #690202;
+  border-bottom: 1px solid #034120;
 }
 
 .loisirs-container {
@@ -388,12 +388,12 @@ p {
 
 .loisir h3 {
   margin-top: 0;
-  color: #690202;
+  color: #034120;
 }
 
 .divider {
   width: 1px;
-  background-color: #690202;
+  background-color: #034120;
 }
 
 
@@ -402,7 +402,7 @@ p {
 /*------------------------------------------------------------------------*/
 
 .footer {
-  background-color: rgba(91, 20, 20, 0.7);
+  background-color: rgba(41, 85, 43, 0.7);
   color: #ededed;
   width: auto;
   padding: 20px 50px;
