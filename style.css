@@ -71,6 +71,12 @@ header {
   color: #ededed;
 }
 
+
+
+/*------------------------------------------------------------------------*/
+/*                                   MAIN                                 */
+/*------------------------------------------------------------------------*/
+
 main a{
   text-decoration: none;
   font-weight: 600;
@@ -86,12 +92,6 @@ main a:hover{
   border-radius: 7px;
   padding: 3px;
 }
-
-
-
-/*------------------------------------------------------------------------*/
-/*                                   MAIN                                 */
-/*------------------------------------------------------------------------*/
 
 /* Partie présentation */
 
@@ -265,6 +265,46 @@ p {
   to { opacity: 1; transform: scale(1); }
 }
 
+
+/* expériences */
+
+.section-experiences {
+  padding: 30px;
+  background-color: #ded6eb;
+  color: #4b3a75;
+  width: 50%;
+  margin: 50px auto;
+  border-radius: 15px;
+  z-index: 1;
+  position: relative;
+}
+
+.section-experiences h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #4b3a75;
+}
+
+.experience {
+  margin: 0 10px 30px;
+  padding: 15px;
+  background-color: #4b3a75;
+  color: #ded6eb;
+  border-left: 7px solid #c39efe;
+  border-radius: 10px;
+}
+
+.experience h3 {
+  margin: 0;
+  font-size: 1.3em;
+  color: #c39efe;
+}
+
+.experience p {
+  margin: 5px 0;
+}
+
+
 /* loisirs */
 
 .loisirs {
@@ -343,8 +383,8 @@ p {
 }
 
 .social-icon img {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   transition: transform 0.2s;
 }
 
