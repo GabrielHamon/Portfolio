@@ -125,6 +125,63 @@ p {
     line-height: 1.4;
 }
 
+/* Études - Frise chronologique */
+.etudes {
+  width: 50%;
+  margin: 50px auto;
+  background-color: #ded6eb;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.etudes h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #4b3a75;
+
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  margin-left: 20px;
+  border-left: 3px solid #4b3a75;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #4b3a75;
+  margin-bottom: 5px;
+}
+
+.timeline-content {
+  background-color: #c39efe;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #4b3a75;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
 /* Partie compétences */
 
 .competences {
@@ -140,7 +197,6 @@ p {
   font-size: 48px;
   margin-bottom: 40px;
   border-bottom: 1px solid #4b3a75;
-  display: inline-block;
 }
 
 .skills-grid {
@@ -217,7 +273,7 @@ p {
 
 .loisirs {
   width: 50%;
-  margin: 0px auto;
+  margin: 50px auto;
   background-color: #ded6eb;
   padding: 30px;
   border-radius: 12px;
@@ -226,11 +282,9 @@ p {
 }
 
 .loisirs h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-  color: #4b3a75;
+  font-size: 48px;
+  margin-bottom: 40px;
   border-bottom: 1px solid #4b3a75;
-  padding-bottom: 10px;
 }
 
 .loisirs-container {
@@ -261,9 +315,43 @@ p {
 /*                               FOOTER                                   */
 /*------------------------------------------------------------------------*/
 
-footer {
-  background-color: #4b3a75;
+.footer {
+  background-color: #4b3a75; /* même couleur que le header */
   color: #ededed;
-  padding: 10px;
-  margin: 50px 0 0 0;
+  width: 100%;
+  padding: 30px 50px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left p {
+  margin: 5px 0;
+  font-family: "Poppins";
+}
+
+.footer-left a {
+  color: #ededed;
+  text-decoration: none;
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
 }
