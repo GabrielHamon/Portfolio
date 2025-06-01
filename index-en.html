@@ -8,29 +8,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:
   ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
-  1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="left-section">
-      <div class="flag"><a href="index-fr.html">
-        <img src="images/emoji/france_flag.png" alt="FRA">
-      </a></div>
-      <div class="flag"><a href="index-en.html">
-        <img src="images/emoji/uk_flag.png" alt="ENG">
-      </a></div>
+      <div class="flag"><a href="index-fr.html"><img src="images/france_flag.png" alt="FRA"></a></div>
+      <div class="flag"><a href="index-en.html"><img src="images/uk_flag.png" alt="ENG"></a></div>
     </div>
 
     <nav class="nav-links">
-      <a href="#qui">About Me</a>
-      <a href="#competences">Skills</a>
-      <a href="#aime">Interests</a>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Work Experience</a>
+      <a href="#hobbies">Hobbies</a>
       <a href="#contact">Contact</a>
     </nav>
 
-          <!-- HTML du SVG -->
+      <!-- HTML du SVG -->
       <div class="nuage">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -41,79 +39,88 @@
   </header>
 
   <main>
-    <div class="container" id="qui">
-      <h1><span class="emoji"><img src="./images/emoji/wave.png" alt="Hi"></span> About Me</h1>
-      <p><span class="emoji"><img src="./images/emoji/man.png" alt="Man"></span>Gabriel Hamon - 18 years old</p>
-      <p><span class="emoji"><img src="./images/emoji//pin.png" alt="Pin"></span>Computer Science student – <strong><a href="https://iut-lannion.univ-rennes.fr">IUT of Lannion</a></strong></p>
-      <p><span class="emoji"><img src="./images/emoji/student_hat.png" alt="Chapo"></span>Currently in my first year</p>
+    <div class="container" id="about">
+      <div class="presentation-header">
+        <div>
+          <h1><span class="emoji"><img src="images/wave.png" alt="Hi"></span> About Me</h1>
+          <p><span class="emoji"><img src="images/man.png" alt="Man"></span>Gabriel Hamon - 18 years old</p>
+          <p><span class="emoji"><img src="images/pin.png" alt="Pin"></span>Computer Science student – <strong><a href="https://iut-lannion.univ-rennes.fr">IUT of Lannion</a></strong></p>
+          <p><span class="emoji"><img src="images/student_hat.png" alt="Chapo"></span>Currently in my 1st year</p>
+        </div>
+        <img src="images/img_officiel.jpg" alt="Profile photo" class="photo-profil">
+      </div>
 
-      <h2><span class="emoji"><img src="./images/emoji/time.png" alt="clock"></span> Current Situation</h2>
+      <h2><span class="emoji"><img src="images/time.png" alt="clock"></span> Current Status</h2>
       <p>
-        I'm currently a computer science student at the IUT of Lannion. My journey has allowed me to acquire solid skills 
-        in programming (HTML, CSS, Java, C, SQL...), database management, and web development. I also had the opportunity 
-        to work on <a href="#competences">real-world projects</a> in teams, improving my communication and organizational skills.
+        I’m currently a student in Computer Science at IUT Lannion. So far, I’ve developed strong skills in programming (HTML, CSS, Java, C, SQL...), database management, and web development. I’ve also worked on <a href="#skills">real projects</a> with teams, which helped me improve my communication and organizational abilities.
       </p>
 
-      <h2><span class="emoji"><img src="./images/emoji/target.png" alt="target"></span> Goals</h2>
-      <p>At the moment, I'm focused on:</p>
+      <h2><span class="emoji"><img src="images/target.png" alt="cible"></span> Goals</h2>
+      <p>Right now, I’m focusing on:</p>
       <ul>
-        <li>Strengthening my computer science skills</li>
-        <li>Taking part in personal or community projects (check out <a href="https://www.instagram.com/localdreamer.lan/">Local Dreamer</a>)</li>
+        <li>Improving my technical skills in computer science</li>
+        <li>Participating in personal and community projects (check out <a href="https://www.instagram.com/localdreamer.lan/">Local Dreamer</a>)</li>
       </ul>
       <p>
-        In the medium term, I hope to find an area I’m passionate about, whether in software design, 
-        front/back-end development, or another field related to computer science.
+        In the near future, I’d like to move towards a field I’m passionate about — whether it’s software design, front/back-end development, or something else in tech.
       </p>
     </div>
 
-    <section class="etudes" id="etudes">
-      <h2><span class="emoji2"><img src="./images/emoji/student_hat.png" alt="Studies"></span> My Education</h2>
+    <section class="etudes" id="education">
+      <h2><span class="emoji2"><img src="images/student_hat.png" alt="Studies"></span> Education</h2>
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-date">2024 - Present</div>
           <div class="timeline-content">
-            <h3>BUT in Computer Science</h3>
-            <p>
-              IUT of Lannion - University of Rennes. Actually learning programming, web development, database management...
-            </p>
+            <h3>BUT Computer Science</h3>
+            <p>IUT of Lannion – University of Rennes. Learning programming, web development, database design...</p>
           </div>
         </div>
+
         <div class="timeline-item">
           <div class="timeline-date">2021 - 2024</div>
           <div class="timeline-content">
-            <h3>General Baccalaureate</h3>
-            <p>Lycée Jean-Brito - majors in Physics-Chemistry and Mathematics (advanced math option)</p>
+            <h3>French General Baccalaureate</h3>
+            <p>Jean-Brito High School – Majors in Physics-Chemistry and Mathematics (with Advanced Maths option)</p>
           </div>
         </div>
+
         <div class="timeline-item">
           <div class="timeline-date">2020 - 2021</div>
           <div class="timeline-content">
-            <h3>Aeronautics Initiation Certificate (BIA)</h3>
-            <p>
-              Collège Saint-Joseph - As the name suggests, this diploma introduced me to the basics of aeronautics 
-              and meteorology.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2017 - 2021</div>
-          <div class="timeline-content">
-            <h3>Middle School Diploma</h3>
-            <p>Collège Saint-Joseph - Learned the foundational skills for my academic journey.</p>
+            <h3>BIA – Aeronautics Initiation Certificate</h3>
+            <p>Saint-Joseph Middle School – Introduced to basics of aeronautics and meteorology.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="competences" id="competences">
-      <h2><span class="emoji2"><img src="./images/emoji/thinking_man.png" alt="Hmm..."></span> My Skills</h2>
+    <section class="competences" id="skills">
+      <h2><span class="emoji2"><img src="images/thinking_man.png" alt="Hmm..."></span> My Skills</h2>
       <div class="skills-grid">
-        <div class="skill" onclick="showPopup('Project Title', 'Project presentation')">Skill Name 1</div>
-        <div class="skill" onclick="showPopup('Project Title', 'Project presentation')">Skill Name 2</div>
-        <div class="skill" onclick="showPopup('Project Title', 'Project presentation')">Skill Name 3</div>
-        <div class="skill" onclick="showPopup('Project Title', 'Project presentation')">Skill Name 4</div>
-        <div class="skill" onclick="showPopup('Project Title', 'Project presentation')">Skill Name 5</div>
-        <div class="skill" onclick="showPopup('Project Title', 'Project presentation')">Skill Name 6</div>
+        <div class="skill" onclick="showPopup('Implementing a client need', 'Project overview')">
+          Skill 1: Develop simple software applications
+        </div>
+
+        <div class="skill" onclick="showPopup('Comparing algorithmic approaches', 'Project overview')">
+          Skill 2: Understand and build algorithms
+        </div>
+
+        <div class="skill" onclick="showPopup('Installing a development workstation', 'Project overview')">
+          Skill 3: Set up and configure a work environment
+        </div>
+
+        <div class="skill" onclick="showPopup('Designing a database', 'Project overview')">
+          Skill 4: Design and implement a database
+        </div>
+
+        <div class="skill" onclick="showPopup('Identifying client needs', 'Project overview')">
+          Skill 5: Identify business and user requirements
+        </div>
+
+        <div class="skill" onclick="showPopup('Understanding team collaboration and environment', 'Project overview')">
+          Skill 6: Identify your strengths for working in a team
+        </div>
       </div>
     </section>
 
@@ -125,61 +132,70 @@
       </div>
     </div>
 
-    <section class="loisirs" id="aime">
-      <h2>My Hobbies</h2>
+    <section id="experience" class="section-experiences">
+      <h2><span class="emoji"><img src="images/valise.png" alt="Briefcase"></span> Work Experience</h2>
+      <div class="experience">
+        <h3>Farm Worker – Family Farm</h3>
+        <p><strong>2018 - Present</strong></p>
+        <p>
+          I’ve been working on my family’s farm for about 7-8 years now, which has taught me perseverance and creative problem solving.
+        </p>
+      </div>
+    </section>
+
+    <section class="loisirs" id="hobbies">
+      <h2><span class="emoji2"><img src="images/coeur.png" alt="Heart"></span> Hobbies</h2>
       <div class="loisirs-container">
         <div class="loisir">
-          <h3>🎮 Video Games</h3>
+          <h3>Video Games</h3>
           <p>
-            Video games are by far my favorite hobby. From Pokémon to Minecraft, including other games like Yo-Kai Watch or Elden Ring, 
-            I've often immersed myself in fantastic worlds that continue to fascinate me every day.
+            Gaming is by far my favorite hobby. From Pokémon to Minecraft, and through Yo-Kai Watch or Elden Ring, I’ve dived into fantastic worlds over and over — and I’m still amazed every time.
           </p>
         </div>
 
         <div class="divider"></div>
 
         <div class="loisir">
-          <h3>📚 Reading</h3>
+          <h3>Reading</h3>
           <p>
-            For me, reading is a way to escape from reality, a way to explore new universes. Since childhood, I have loved reading 
-            everything : sci-fi, crime novels, comics, manga, ...
+            Reading lets me escape and explore new universes. Since I was a kid, I’ve always loved books — whether it’s sci-fi, crime novels, comics, or manga.
           </p>
         </div>
 
         <div class="divider"></div>
 
         <div class="loisir">
-          <h3>⚽ Football</h3>
+          <h3>Football</h3>
           <p>
-            Football is my favorite sport. It’s a simple game (22 players chasing the same ball to shoot it 
-            into a 7.32m by 2.44m rectangle), but it always thrilled me.
+            Football is my favorite sport. It may look simple (22 players chasing a ball and trying to put it in a 7.32 x 2.44 m goal), but it’s always made me feel something special.
           </p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="footer-content">
       <div class="footer-left">
         <p><strong>Address:</strong> Rue Edouard Branly, 22300 Lannion</p>
-        <p><strong>Phone:</strong> <a href="tel:+330612514265">06 12 51 42 65</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+330612514265">+33 6 12 51 42 65</a></p>
         <p><strong>Email:</strong> <a href="mailto:hamongabriel35@gmail.com">hamongabriel35@gmail.com</a></p>
       </div>
       <div class="footer-right">
-        <a href="https://instagram.com" target="_blank" class="social-icon">
-          <img src="icons/instagram.svg" alt="Instagram" />
+        <a href="https://www.instagram.com/gabriel_35470/" target="_blank" class="social-icon">
+          <img src="images/instagram.png" alt="Instagram" />
         </a>
-        <a href="https://facebook.com" target="_blank" class="social-icon">
-          <img src="icons/facebook.svg" alt="Facebook" />
+        <a href="https://github.com/GabrielHamon" target="_blank" class="social-icon">
+          <img src="images/github.png" alt="Github" />
         </a>
-        <a href="https://twitter.com" target="_blank" class="social-icon">
-          <img src="icons/twitter.svg" alt="Twitter" />
+        <a href="https://www.linkedin.com/in/gabriel-hamon-248264357/" target="_blank" class="social-icon">
+          <img src="images/logo-linkedin.png" alt="Linkedin" />
         </a>
       </div>
     </div>
   </footer>
 
+  <!-- You can keep the same JS for the stars and popups -->
   <script>
     function showPopup(title, description) {
       document.getElementById('popup-title').textContent = title;
@@ -196,6 +212,27 @@
       if (event.target === popup) {
         popup.style.display = "none";
       }
+    }
+  </script>
+
+  <script>
+    const nb = 500;
+    const colors = ['#ffffff', '#ffcc99', '#99ccff', '#ff99cc', '#ccffcc'];
+    const starContainer = document.createElement('div');
+    starContainer.className = 'stars';
+    document.body.appendChild(starContainer);
+
+    for (let i = 0; i < nb; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.left = `${Math.random() * 100}%`;
+      const size = Math.random() * 3 + 1;
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+      star.style.background = colors[Math.floor(Math.random() * colors.length)];
+      star.style.animationDelay = `${Math.random() * 2}s`;
+      starContainer.appendChild(star);
     }
   </script>
 </body>
