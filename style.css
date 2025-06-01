@@ -104,6 +104,22 @@ main a:hover{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
+.presentation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.photo-profil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4b3a75;
+}
+
 h1, h2 {
     color: #2d2d45;
 }
