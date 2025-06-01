@@ -1,0 +1,479 @@
+ body {
+      font-family: "Poppins";
+      background-color: rgb(13, 1, 57);
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 {
+      font-family: "DM Serif Display";
+    }
+
+    .emoji {
+      font-size: 1.2em;
+      margin-right: 5px;
+  }
+
+/*------------------------------------------------------------------------*/
+/*                                   HEADER                               */
+/*------------------------------------------------------------------------*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #4b3a75;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.flag {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ededed;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #4b3a75; /* couleur du header */
+  border-radius: 8px;
+  font-family: "Poppins";
+  color: #ededed;
+}
+
+.theme-switcher label {
+  font-weight: 600;
+  color: #ededed;
+}
+
+#theme-select {
+  background-color: #2d2d45;
+  color: #ededed;
+  border: 2px solid #c39efe;
+  padding: 3px 5px;
+  margin-right: 10px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: "Poppins";
+}
+
+#theme-select:hover {
+  background-color: #3a2e5a;
+  border-color: #ffffff;
+}
+
+/* SVG dans le header */
+.nuage {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -5;
+}
+
+.nuage svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height:80px;
+}
+
+.nuage .shape-fill {
+    fill: #4b3a75;
+}
+
+/*------------------------------------------------------------------------*/
+/*                                   MAIN                                 */
+/*------------------------------------------------------------------------*/
+
+main a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #050027;
+}
+
+a:hover {
+  color: #e6ddf4;
+}
+
+main a:hover{
+  background-color:#4b3a75;
+  border-radius: 7px;
+  padding: 3px;
+}
+
+/* Partie présentation */
+
+.container {
+    width: 50%;
+    margin: 100px auto 0px auto;
+    background-color: #ded6eb;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.presentation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.photo-profil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4b3a75;
+}
+
+h1, h2 {
+    color: #2d2d45;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+p {
+    line-height: 1.4;
+}
+
+/* Études - Frise chronologique */
+.etudes {
+  width: 50%;
+  margin: 50px auto;
+  background-color: #ded6eb;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.etudes h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #4b3a75;
+
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  margin-left: 20px;
+  border-left: 3px solid #4b3a75;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #4b3a75;
+  margin-bottom: 5px;
+}
+
+.timeline-content {
+  background-color: #c39efe;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #4b3a75;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+/* Partie compétences */
+
+.competences {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #ded6eb;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.competences h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #4b3a75;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill {
+  background-color: #4b3a75;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #ededed;
+  text-align: center;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Popup modale */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background-color: #ded6eb;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-content h3 {
+  margin-top: 0;
+  color: #3a1212;
+}
+
+.popup-content p {
+  color: #444;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #999;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+/* expériences */
+
+.section-experiences {
+  padding: 30px;
+  background-color: #ded6eb;
+  color: #4b3a75;
+  width: 50%;
+  margin: 50px auto;
+  border-radius: 15px;
+  z-index: 1;
+  position: relative;
+}
+
+.section-experiences h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #4b3a75;
+}
+
+.experience {
+  margin: 0 10px 30px;
+  padding: 15px;
+  background-color: #4b3a75;
+  color: #ded6eb;
+  border-left: 7px solid #c39efe;
+  border-radius: 10px;
+}
+
+.experience h3 {
+  margin: 0;
+  font-size: 1.3em;
+  color: #c39efe;
+}
+
+.experience p {
+  margin: 5px 0;
+}
+
+
+/* loisirs */
+
+.loisirs {
+  width: 50%;
+  margin: 50px auto;
+  background-color: #ded6eb;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #000;
+}
+
+.loisirs h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #4b3a75;
+}
+
+.loisirs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  gap: 20px;
+}
+
+.loisir {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.loisir h3 {
+  margin-top: 0;
+  color: #4b3a75;
+}
+
+.divider {
+  width: 1px;
+  background-color: #4b3a75;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*                               FOOTER                                   */
+/*------------------------------------------------------------------------*/
+
+.footer {
+  background-color: rgba(75, 58, 117, 0.7);
+  color: #ededed;
+  width: auto;
+  padding: 20px 50px;
+}
+
+.footer-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left p {
+  margin: 5px 0;
+  font-family: "Poppins";
+}
+
+.footer-left a {
+  color: #ededed;
+  text-decoration: none;
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
+
+
+/*------------------------------------------------------------------------*/
+/*                               ETOILES                                  */
+/*------------------------------------------------------------------------*/
+
+/* Fond étoilé animé */
+.stars {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: white;
+  animation: glow 2s infinite;
+  opacity: 0.8;
+}
+
+@keyframes glow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}

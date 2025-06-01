@@ -11,14 +11,25 @@
     ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
     1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link id="theme-style" rel="stylesheet" href="style.css">
   </head>
   <body>
       <header>
           <div class="left-section">
+
+            <div class="theme-switcher">
+              <label for="theme-select">Thème :</label>
+              <select id="theme-select">
+                <option value="violet.css">Violet</option>
+                <option value="vert.css">Bleu</option>
+                <option value="rouge.css">Rouge</option>
+              </select>
+            </div>
+
             <div class="flag">
               <a href="index.html"><img src="images/france_flag.png" alt="FRA"></a>
             </div>
+
             <div class="flag">
               <a href="index-en.html"><img src="images/uk_flag.png" alt="ENG"></a>
             </div>
@@ -60,20 +71,20 @@
 
           <h2><span class="emoji"><img src="images/time.png" alt="clock"></span> Situation actuelle</h2>
           <p>
-            Je suis actuellement étudiant en BUT Informatique à l’IUT de Lannion. Mon parcours m’a permis d’acquérir 
+            Je suis actuellement étudiant en BUT Informatique à l'IUT de Lannion. Mon parcours m'a permis d'acquérir 
             des compétences solides en programmation (HTML, CSS, Java, C, SQL...), en gestion de bases de données, et 
-            en développement web. J’ai également eu l’occasion de travailler sur des <a href="#competences">projets concrets</a> 
+            en développement web. J'ai également eu l'occasion de travailler sur des <a href="#competences">projets concrets</a> 
             en équipe, renforçant mes capacités en communication et en organisation.
           </p>
 
           <h2><span class="emoji"><img src="images/target.png" alt="cible"></span> Objectifs</h2>
-          <p> Pour l’instant, je me concentre sur : </p>
+          <p> Pour l'instant, je me concentre sur : </p>
           <ul>
             <li>Le renforcement de mes compétences en informatique</li>
             <li>La participation à des projets personnels ou associatifs (je vous invite à suivre <a href="https://www.instagram.com/localdreamer.lan/">Local Dreamer</a>)</li>
           </ul>
           <p>
-            À moyen terme, je souhaite m’orienter vers un domaine qui me passionne vraiment, que ce soit dans la conception logicielle,
+            À moyen terme, je souhaite m'orienter vers un domaine qui me passionne vraiment, que ce soit dans la conception logicielle,
             le développement front/back-end, ou tout autre domaine lié à l'informatique.
           </p>
       </div>
@@ -84,7 +95,7 @@
           <div class="timeline">
 
             <div class="timeline-item">
-              <div class="timeline-date">2024 - Aujourd’hui</div>
+              <div class="timeline-date">2024 - Aujourd'hui</div>
               <div class="timeline-content">
                 <h3>BUT Informatique</h3>
                 <p>
@@ -121,32 +132,32 @@
           <div class="skills-grid">
 
             <div class="skill" onclick=
-              "showPopup('Implémentation d un besoin client', 'présentation du projet')">
+              "showPopup('SAE 1.01 - Implémentation d un besoin client', 'Dans le cadre de ma formation, j ai développé une version du jeu Snake en langage C, entièrement jouable dans le terminal. Ce projet m a permis de renforcer ma compréhension de la gestion de l affichage en mode texte, de la manipulation des tableaux dynamiques pour représenter le serpent, ainsi que des boucles de jeu en temps réel. Jai également implémenté un système de détection de collisions, un score, et une logique de croissance du serpent à chaque pomme mangée. Ce projet simple mais complet m a appris à mieux structurer mon code et à penser en termes d optimisation et de fluidité de jeu.')">
               Compétence 1 : Développer des applications informatiques simples
             </div>
 
             <div class="skill" onclick=
-              "showPopup('Comparaison d approches algorithmiques', 'présentation du projet')">
+              "showPopup('SAE 1.02 - Comparaison d approches algorithmiques', 'Dans ce projet, j ai automatisé le célèbre jeu Snake en C, avec un affichage dans le terminal. Après avoir codé une version jouable manuellement, j ai implémenté des algorithmes pour permettre à deux serpents contrôlés par le programme de s affronter. Chaque serpent suivait une stratégie algorithmique simple basée sur la recherche de la nourriture et l évitement d obstacles, incluant un pseudo-A* pour la navigation ou une logique de priorité directionnelle. Le défi principal a été de gérer les collisions en temps réel et d optimiser les décisions pour simuler un duel autonome. Ce projet m a permis d expérimenter concrètement des concepts d algorithmes de pathfinding et de simulation dans un environnement contraint.')">
               Compétence 2 : Appréhender et construire des algorithmes
             </div>
 
             <div class="skill" onclick=
-              "showPopup('Installation d un poste pour le développement', 'présentation du projet')">
+              "showPopup('SAE 1.03 - Installation d un poste pour le développement', 'Dans ce projet, j ai utilisé Docker et des scripts Bash pour automatiser le traitement de fichiers texte et image. L objectif était de formater des fichiers texte/images, et à terme de modifier un tableau des médailles des JO 2024. Les scripts extrayaient les données, comptaient le nombre de médailles par pays selon leur type (or, argent, bronze), puis mettaient en forme le tableau final de façon lisible. Ce projet m a permis de manipuler des outils de conteneurisation et d automatiser efficacement des tâches répétitives.')">
               Compétence 3 : Installer et configurer un poste de travail
             </div>
 
             <div class="skill" onclick=
-              "showPopup('Conception d une base de données', 'présentation du projet')">
+              "showPopup('SAE 1.04 - Conception d une base de données', 'Dans ce projet, j ai conçu une base de données autour d une ligue de football. À partir d un simple fichier texte décrivant les règles et les entités du championnat, j ai élaboré un schéma UML structuré, puis je l ai traduit en classes en Tutorial D. Ce processus m a permis de mieux comprendre la modélisation conceptuelle des données et la façon de structurer proprement une base de données relationnelle.')">
               Compétence 4 : Concevoir et mettre en place une BDD
             </div>
 
             <div class="skill" onclick=
-              "showPopup('Recueil des besoins d un client', 'présentation du projet')">
+              "showPopup('SAE 1.05 - Recueil des besoins d un client', 'Dans ce projet, j ai participé à la création d un site web dédié aux Jeux Olympiques de Paris 2024. Nous avons commencé par analyser les besoins du client afin de bien cerner les fonctionnalités attendues. Ensuite, nous avons élaboré une charte graphique pour définir l identité visuelle du site, puis réalisé une maquette pour visualiser la structure et le design. Enfin, nous avons développé le site en respectant ces éléments, avec comme contrainte de n avoir qu un seul fichier CSS.')">
               Compétence 5 : Identifier les besoins métiers des clients et des utilisateurs
             </div>
 
             <div class="skill" onclick=
-              "showPopup('Découverte de l environnement économique et écologique','présentation du projet')">
+              "showPopup('SAE 1.06 - Découverte de l environnement économique et écologique','Le but du projet était d analyser la politique de Responsabilité Sociétale des Entreprises (RSE) d une entreprise, et nous avons choisi Nestlé comme cas d étude. Nous avons d abord recueilli un maximum d informations issues des rapports officiels, des communiqués et des données publiques concernant leurs engagements sociaux, environnementaux et éthiques. Ensuite, nous avons évalué la manière dont Nestlé applique concrètement sa politique RSE, en comparant les objectifs affichés avec les actions réellement mises en œuvre. Cette analyse a permis de mettre en lumière les domaines où le suivi de la politique RSE pouvait être amélioré.')">
               Compétence 6 : Identifier ses aptitudes pour travailler dans une équipe
             </div>
 
@@ -167,7 +178,7 @@
         <h2><span class="emoji"><img src="images/valise.png" alt="Valise"></span> Mes expériences professionnelles</h2>
         <div class="experience">
           <h3>Ouvrier agricole - Exploitation familiale</h3>
-          <p><strong> 2018 - Aujourd’hui</strong></p>
+          <p><strong> 2018 - Aujourd'hui</strong></p>
           <p>
             Ouvrier agricole sur l'exploitation familiale depuis maintenant 7/8 ans, cela m'a permis 
             de développer certaines compétences tel que la perséverance ou la résolution de problèmes.
@@ -203,7 +214,7 @@
           <div class="loisir">
             <h3>Football</h3>
             <p>Le football, c'est mon sport de coeur. C'est un sport très simple (22 joueurs qui courent après 
-              la même balle pour la mettre dans un rectangle de 7,32 mètres de large sur 2,44 mètres de haut)
+              la même balle pour la mettre dans un rectangle de 7,32 mètres de large sur 2,44 mètres de haut),
               mais qui m'a toujours fait vibrer.
 
             </p>
@@ -237,6 +248,7 @@
   </body>
 </html>
 
+
 <!-- SCRIPT POUR LES POPUP -->
 <script>
   function showPopup(title, description) {
@@ -257,6 +269,8 @@
     }
   }
 </script>
+
+
 
 <!-- SCRIPT POUR LES ETOILES -->
 <script>
@@ -283,9 +297,31 @@
     // Couleur aléatoire
     star.style.background = colors[Math.floor(Math.random() * colors.length)];
 
-    // Délai d’animation pour l’effet scintillant
+    // Délai d'animation pour l'effet scintillant
     star.style.animationDelay = `${Math.random() * 2}s`;
 
     starContainer.appendChild(star);
   }
+</script>
+
+
+
+<!-- SCRIPT POUR LE CHOIX DE THEME -->
+<script>
+  const themeSelect = document.getElementById("theme-select");
+  const themeLink = document.getElementById("theme-style");
+
+  // Charger le thème sauvegardé
+  const savedTheme = localStorage.getItem("theme-css");
+  if (savedTheme) {
+    themeLink.href = savedTheme;
+    themeSelect.value = savedTheme;
+  }
+
+  // Au changement
+  themeSelect.addEventListener("change", () => {
+    const selectedTheme = themeSelect.value;
+    themeLink.href = selectedTheme;
+    localStorage.setItem("theme-css", selectedTheme);
+  });
 </script>

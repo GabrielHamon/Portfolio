@@ -10,7 +10,7 @@
   ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
   1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="violet.css">
 </head>
 <body>
   <header>
@@ -28,7 +28,14 @@
       <a href="#contact">Contact</a>
     </nav>
 
-
+        <!-- HTML du SVG -->
+        <div class="nuage">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
   </header>
 
   <main>
@@ -45,17 +52,17 @@
 
       <h2><span class="emoji"><img src="images/time.png" alt="clock"></span> Current Status</h2>
       <p>
-        I’m currently a student in Computer Science at IUT Lannion. So far, I’ve developed strong skills in programming (HTML, CSS, Java, C, SQL...), database management, and web development. I’ve also worked on <a href="#skills">real projects</a> with teams, which helped me improve my communication and organizational abilities.
+        I'm currently a student in Computer Science at IUT Lannion. So far, I've developed strong skills in programming (HTML, CSS, Java, C, SQL...), database management, and web development. I've also worked on <a href="#skills">real projects</a> with teams, which helped me improve my communication and organizational abilities.
       </p>
 
       <h2><span class="emoji"><img src="images/target.png" alt="cible"></span> Goals</h2>
-      <p>Right now, I’m focusing on:</p>
+      <p>Right now, I'm focusing on:</p>
       <ul>
         <li>Improving my technical skills in computer science</li>
         <li>Participating in personal and community projects (check out <a href="https://www.instagram.com/localdreamer.lan/">Local Dreamer</a>)</li>
       </ul>
       <p>
-        In the near future, I’d like to move towards a field I’m passionate about — whether it’s software design, front/back-end development, or something else in tech.
+        In the near future, I'd like to move towards a field I'm passionate about — whether it's software design, front/back-end development, or something else in tech.
       </p>
     </div>
 
@@ -91,27 +98,27 @@
     <section class="competences" id="skills">
       <h2><span class="emoji2"><img src="images/thinking_man.png" alt="Hmm..."></span> My Skills</h2>
       <div class="skills-grid">
-        <div class="skill" onclick="showPopup('Implementing a client need', 'Project overview')">
+        <div class="skill" onclick="showPopup('SAE 1.01 - Implementing a client need', 'Project overview')">
           Skill 1: Develop simple software applications
         </div>
 
-        <div class="skill" onclick="showPopup('Comparing algorithmic approaches', 'Project overview')">
+        <div class="skill" onclick="showPopup('SAE 1.02 - Comparing algorithmic approaches', 'Project overview')">
           Skill 2: Understand and build algorithms
         </div>
 
-        <div class="skill" onclick="showPopup('Installing a development workstation', 'Project overview')">
+        <div class="skill" onclick="showPopup('SAE 1.03 - Installing a development workstation', 'Project overview')">
           Skill 3: Set up and configure a work environment
         </div>
 
-        <div class="skill" onclick="showPopup('Designing a database', 'Project overview')">
+        <div class="skill" onclick="showPopup('SAE 1.04 - Designing a database', 'Project overview')">
           Skill 4: Design and implement a database
         </div>
 
-        <div class="skill" onclick="showPopup('Identifying client needs', 'Project overview')">
+        <div class="skill" onclick="showPopup('SAE 1.05 - Identifying client needs', 'Project overview')">
           Skill 5: Identify business and user requirements
         </div>
 
-        <div class="skill" onclick="showPopup('Understanding team collaboration and environment', 'Project overview')">
+        <div class="skill" onclick="showPopup('SAE 1.06 - Understanding team collaboration and environment', 'Project overview')">
           Skill 6: Identify your strengths for working in a team
         </div>
       </div>
@@ -128,10 +135,10 @@
     <section id="experience" class="section-experiences">
       <h2><span class="emoji"><img src="images/valise.png" alt="Briefcase"></span> Work Experience</h2>
       <div class="experience">
-        <h3>Farm Worker – Family Farm</h3>
+        <h3>Farm Worker - Family Farm</h3>
         <p><strong>2018 - Present</strong></p>
         <p>
-          I’ve been working on my family’s farm for about 7-8 years now, which has taught me perseverance and creative problem solving.
+          I've been working on my family's farm for about 7-8 years now, which has taught me perseverance and creative problem solving.
         </p>
       </div>
     </section>
@@ -142,7 +149,8 @@
         <div class="loisir">
           <h3>Video Games</h3>
           <p>
-            Gaming is by far my favorite hobby. From Pokémon to Minecraft, and through Yo-Kai Watch or Elden Ring, I’ve dived into fantastic worlds over and over — and I’m still amazed every time.
+            Gaming is by far my favorite hobby. From Pokémon to Minecraft, and through Yo-Kai Watch or Elden Ring, 
+            I've dived into fantastic worlds over and over — and I'm still amazed every time.
           </p>
         </div>
 
@@ -151,7 +159,8 @@
         <div class="loisir">
           <h3>Reading</h3>
           <p>
-            Reading lets me escape and explore new universes. Since I was a kid, I’ve always loved books — whether it’s sci-fi, crime novels, comics, or manga.
+            Reading lets me escape and explore new universes. Since I was a kid, I've always loved books — whether 
+            it's sci-fi, crime novels, comics, or manga.
           </p>
         </div>
 
@@ -160,7 +169,8 @@
         <div class="loisir">
           <h3>Football</h3>
           <p>
-            Football is my favorite sport. It may look simple (22 players chasing a ball and trying to put it in a 7.32 x 2.44 m goal), but it’s always made me feel something special.
+            Football is my favorite sport. It may look simple (22 players chasing the same ball and trying to put it 
+            in a 7.32 x 2.44 m goal), but it's always made me feel something special.
           </p>
         </div>
       </div>
